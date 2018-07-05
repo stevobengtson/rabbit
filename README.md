@@ -1,3 +1,22 @@
+# Setup for development
+
+## Use Homestead
+
+- Install Vagrant
+- Install VirtualBox (VMware, Parallels are also usable)
+- Get Homestead
+- Configure Homestead
+- Launch vagrant `vagrant up` in homestead folder
+- Configure virtual machine
+  - `vagrant ssh`
+  - Install php-cs-fixer `composer global require friendsofphp/php-cs-fixer`
+- Navigate to home page
+
+## Checking style
+
+`php-cs-fixer fix --verbose --show-progress=estimating ./app`
+
+
 <p align="center"><img src="https://laravel.com/assets/img/components/logo-laravel.svg"></p>
 
 <p align="center">
