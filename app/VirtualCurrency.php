@@ -12,7 +12,7 @@ class VirtualCurrency extends Model
         VirtualCurrency::creditAmount($sourceUserId, $destinationUserId, $amount);
 
         if ($sourceUserId !== null) {
-            VirtualCurrency::debitAmount($destinationUserId, $sourceUserId, $amount);
+            VirtualCurrency::debitAmount(null, $sourceUserId, $amount);
         }
     }
 
@@ -33,7 +33,7 @@ class VirtualCurrency extends Model
         $sourceVirtualCurrency->destination_user_id = $destinationUserId;
         $sourceVirtualCurrency->credit = $credit;
         $sourceVirtualCurrency->debit = $debit;
-        $sourceVirtualCurrency->save();        
+        $sourceVirtualCurrency->save();
     }
 
     public static function userBalance($userId)
