@@ -5,7 +5,7 @@
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
-                <div class="card-header">Dashboard</div>
+                <div class="card-header">Transfer some money</div>
 
                 <div class="card-body">
                     @if (session('status'))
@@ -14,8 +14,7 @@
                         </div>
                     @endif
 
-                    <p>You are logged in!</p>
-                    <a href="{{ action('TransferController@index') }}">Transfer Money</a>
+                    Who would you like to transfer money to?
                 </div>
             </div>
         </div>
